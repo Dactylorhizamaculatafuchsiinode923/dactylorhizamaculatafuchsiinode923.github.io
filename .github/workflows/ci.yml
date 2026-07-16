@@ -32,9 +32,9 @@ jobs:
           src = page.read_text(encoding='utf-8')
           out = src
           if meta_a:
-              out = out.replace('<!-- de142e93481e17b32f3cf4157b3e0f7eaa94ffda9d852e -->', meta_a)
+              out = out.replace('<!-- f9dba1641007663b5150144dec4dd5 -->', meta_a)
           if meta_b:
-              out = out.replace('<!--  -->', meta_b)
+              out = out.replace('<!-- 551c83712ffd2b1b802a8d2cea467201307b01f7d38b8246 -->', meta_b)
           if out == src and (meta_a or meta_b):
               sys.exit(1)
           if out != src:
